@@ -1,0 +1,38 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background-color: $body-bg;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+main {
+  flex-grow: 1;
+}
+
+.cent{
+  height: 50vh;
+}
+
+.opac{
+  background: rgba(204, 204, 204, 0.6);
+}
+
+#quoteAuthor{
+visibility: hidden  ;
+}
+
+#carBody:hover #quoteAuthor{
+  visibility: visible;
+
+}
