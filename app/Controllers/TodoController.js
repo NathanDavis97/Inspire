@@ -47,6 +47,8 @@ export default class TodoController {
       checked: false,
       user: "nathan",
     };
+    // @ts-ignore
+    form.reset()
     try {
       todoService.addTodo(todo);
     } catch (error) {
